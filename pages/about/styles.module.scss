@@ -1,0 +1,119 @@
+.mainContainer {
+  min-height: 100vh;
+  padding: 140px 150px 200px 100px;
+}
+
+.educationInfo {
+  margin-top: 50px;
+  ul {
+    width: 100%;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+    display: inline-block;
+    padding-top: 10px;
+  }
+  ul::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #56585c;
+  }
+  ul li:before {
+    background-color: #000;
+    border-color: #56585c;
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    // background: #fff;
+    border-radius: 100%;
+    border: 1px solid #ccc;
+    left: -9px;
+    top: 35px;
+  }
+}
+
+.CvButton {
+  padding: 15px 30px;
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    padding-right: 50px;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.text {
+  border: 2px solid #e5edf4;
+  padding: 40px;
+  margin-bottom: 30px;
+  border-color: #56585c;
+  position: relative;
+
+  ::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    top: 100%;
+    left: 50px;
+    border: solid transparent;
+    border-top: solid #e5edf4;
+    border-width: 18px 18px 0 0;
+    border-top-color: #56585c;
+  }
+  ::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 50px;
+    height: 0;
+    width: 0;
+    border: solid transparent;
+    border-top: solid #f6fbff;
+    border-width: 14px 13px 0 0;
+    margin-left: 2px;
+    border-top-color: #111;
+  }
+}
+
+.details {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.image {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  .main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 100%;
+  }
+}
+.info {
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .mainContainer {
+    padding: 140px 20px 200px 20px;
+  }
+}

@@ -1,0 +1,51 @@
+.mainContainer {
+  min-height: 100vh;
+  padding: 140px 150px 200px 100px;
+}
+
+.readContainer {
+  .readDocs {
+    font-size: 14px;
+    margin-top: 10px;
+    visibility: hidden;
+    margin-left: -50px;
+    transition: all 0.4s ease-in-out;
+  }
+}
+.readContainer:hover {
+  .readDocs {
+    color: white;
+    font-size: "20px";
+    visibility: visible;
+    margin-left: 1px;
+    transition: all 0.55s ease-in-out;
+  }
+}
+
+.numberContainer {
+  display: inline-block;
+  margin-bottom: 25px;
+  font-size: 20px;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.03);
+  font-weight: 700;
+  color: white;
+  transition: all 0.3s ease;
+}
+.title {
+  font-weight: 700;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .mainContainer {
+    padding: 140px 20px 200px 20px;
+  }
+}

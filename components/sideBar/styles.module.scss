@@ -1,0 +1,14 @@
+.contentContainer {
+  min-height: 100vh;
+  background-color: #111;
+  min-width: 82vw;
+  width: 82vw;
+  color: #bbb;
+}
+
+@media screen and (max-width: 1200px) {
+  .contentContainer {
+    min-width: 100vw;
+    width: 100vw;
+  }
+}
