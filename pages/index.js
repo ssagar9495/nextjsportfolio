@@ -75,10 +75,10 @@ export default function Home() {
             }}
           >
             <div>
-              <Typography className="text-5xl	font-extrabold	uppercase mb-4 text-white">
+              <div className="text-5xl font-extrabold	uppercase mb-4 text-white pt-6">
                 SAGAR RANA
-              </Typography>
-              <Typography variant="h4" className="font-medium	 text-white">
+              </div>
+              <div className="font-medium text-2xl text-white py-2">
                 <Typewriter
                   options={{ autoStart: true, loop: true }}
                   onInit={(typewriter) => {
@@ -95,16 +95,16 @@ export default function Home() {
                       .start();
                   }}
                 />
-              </Typography>
+              </div>
 
-              <Typography
+              <div
                 className="font-medium my-5 text-lg	"
                 style={{ maxWidth: "450px" }}
               >
                 Creative Software Development Engineer based in Chandigarh
                 (India) and happy to face for new challenges to grow and develop
                 my skills.
-              </Typography>
+              </div>
               <div style={{ display: "flex" }}>
                 {SOCIAL_HANDLER.map((socialObj, i) => {
                   return (
